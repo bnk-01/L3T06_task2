@@ -38,3 +38,8 @@
 
 #Credit
 This program was developed my samuel egheghe AKA BNK-01
+
+# Github url
+https://github.com/bnk-01/L3T06_task2.git
+
+
