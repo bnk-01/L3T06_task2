@@ -34,4 +34,4 @@
 - Once you have completed your desired task(s), you may exit the program by selecting the "e" option.
 
 # Snapshot of my email Program in Action
-![GitHub Logo](/images/Screenshot 2023-05-16 at 13.44.02.png)
+![GitHub Logo](/images/IMG01.png)
