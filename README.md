@@ -35,3 +35,6 @@
 
 # Snapshot of my email Program in Action
 ![GitHub Logo](/images/IMG01.png)
+
+#Credit
+This program was developed my samuel egheghe AKA BNK-01
