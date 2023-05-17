@@ -134,7 +134,7 @@ timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 usage_message = f'''
 {timestamp} | Welcome to the email system! 
 
-What would you like to do?
+What would you like to do today?
 s - send email.
 l - list emails from a sender.
 r - read email.
