@@ -132,8 +132,9 @@ inbox.add_email("jane@example.com", "Python Programming", "Here is email content
 # declared a variable to hold time stamp
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 usage_message = f'''
-{timestamp} | Welcome to the email system! What would you like to do?
+{timestamp} | Welcome to the email system! 
 
+What would you like to do?
 s - send email.
 l - list emails from a sender.
 r - read email.
