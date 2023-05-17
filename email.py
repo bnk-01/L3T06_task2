@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 # creating my class
 
 class Email:
@@ -8,6 +11,7 @@ class Email:
         self.message = email_contents
         self.read = as_been_read
         self.spam = is_spam
+        self.timestamp = datetime.now()
 
     def mark_as_read(self):  # defining a method to change read to True
         self.read = True
@@ -22,7 +26,8 @@ class Email:
     Subject: {self.subject}
     Message: {self.message} 
     Read: {self.read}
-    Spam: {self.spam}"""
+    Spam: {self.spam}
+    Time: {self.timestamp.strftime('%Y-%m-%d %H:%M:%S')}"""
 
 
 # class to manipulate my inbox
@@ -124,9 +129,12 @@ inbox.add_email("john@example.com", "Hello World2", "Here is email content 2")
 inbox.add_email("john@example.com", "Hello World2", "Here is email content 3")
 inbox.add_email("jane@example.com", "Python Programming", "Here is email content 2")
 
-usage_message = '''
-Welcome to the email system! What would you like to do?
+# declared a variable to hold time stamp
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+usage_message = f'''
+{timestamp} | Welcome to the email system! 
 
+What would you like to do today?
 s - send email.
 l - list emails from a sender.
 r - read email.
@@ -221,7 +229,7 @@ while True:
         inbox.delete()
 
         # Step 3: ask the user for the index of the email
-        #email_index = int(input("Please enter the index of the email to be deleted\n:"))
+        # email_index = int(input("Please enter the index of the email to be deleted\n:"))
 
         # Step 4: delete the email
 
