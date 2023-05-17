@@ -230,4 +230,4 @@ while True:
 
         pass
     else:
-        print("Oops - incorrect input")
+        print("Oops - Incorrect input")
