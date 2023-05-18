@@ -129,6 +129,20 @@ inbox.add_email("john@example.com", "Hello World2", "Here is email content 2")
 inbox.add_email("john@example.com", "Hello World2", "Here is email content 3")
 inbox.add_email("jane@example.com", "Python Programming", "Here is email content 2")
 
+username = "admin"
+password = "adm1n"
+
+user_name = input("Please enter your username: ").lower()
+while user_name != username:
+    user_name = input("Please re-enter your username: ").lower()
+if user_name == username:
+    user_password = input("Please enter your password: ").lower()
+    while user_password != password:
+        user_password = input("Please enter a valid password: ").lower()
+    else:
+        print("Login successful, Welcome!!!")
+
+
 # declared a variable to hold time stamp
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 usage_message = f'''
